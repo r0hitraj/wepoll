@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+<div id="centered">
+  <h1 class="font horcent">Welcome to <a class="greenlink" href="#"><i class="green">WePoll</i></a></h1>
+  <h2 class="font horcent"><i class="green">Poll for Good. Poll for Best. Poll for Excellent.</i></h2>
+  <hr>
+  <button  class="grn-button "><b><a href="{% url 'create' %}">Create A Poll</a></b></button>
+  <hr>
+  <button  class="grn-button"><b><a href="{% url 'join' %}">Join a Poll</a></b></button>
+  <hr>
+  <button  class="grn-button"><b><a href="{% url 'manage' %}">Admin a Poll</a></b></button>
+  <hr>
+
+  <div id="footer" class="center green">
+    <br><br><br><br><br><br><br><br>
+   Made by ❤️ <a  class="greenlink" href="https://r0hitraj.github.io/">Rohit Raj</a> 
+</div>
+</div>
+
+{% endblock body %}

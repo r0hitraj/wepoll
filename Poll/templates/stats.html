@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block body %}
+
+{% if user.is_authenticated %}
+
+        <div id="centered">
+            <h1 class="font horcent">Welcome to <a class="greenlink" href="#"><i class="green">WePoll</i></a></h1>
+            <h2 class="font horcent"><i class="green">Stats of The Poll</i></h2>
+            <hr>
+            <h2 class="font horcent"><i>Question</i></h2>
+            <h2 class="font horcent"><i class="green">{{ data.question }}</i></h2>
+            <hr>
+            <h3 class="font horcent"><i class="green">Voter Email</i> Voted Option</h3>
+            <hr>
+            {% for vot in vote %}
+            <h3 class="font horcent"><i class="green">{{ vot.email }}&nbsp;</i><b>&nbsp;&nbsp;Voted-></b>{{ vot.opname}}</h3>
+            <hr>
+            {% endfor %}
+            <hr>
+            <button  class="grn-button"><b><a href="{% url 'delt'  %}"><b>Delete Poll</b></a></b></button><br><br>
+            <button  class="grn-button"><b><a href="{% url 'logout' %}"><b>Logout</b></a></b></button><br><br>
+
+
+            <div id="footer" class="center green">
+              <br><br><br><br><br><br>
+             Made by ❤️ <a  class="greenlink" href="https://r0hitraj.github.io/">Rohit Raj</a> 
+         </div>
+          </div>
+
+          
+{% endif %}
+
+
+ {% endblock body %}
+
+ 

@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+{% block body %}
+
+
+        <div id="centered">
+            <h1 class="font horcent">Welcome to<a class="greenlink" href="#"><i class="green"> WePoll</i></a></h1>
+            <h2 class="font horcent"><i class="green">Please Add Options</i></h2>
+            <hr>
+            <form action=""  method='POST'>
+              {% csrf_token %}
+           
+            <h3 class="font horcent"><i>Options</i></h3>
+            <b></b>
+            <ul><div id="new_chq"></div></ul>
+            
+
+         
+            <input type="hidden" value="0" id="total_chq" >
+            <button href="#" class="grn-button" onclick="add()"><b>Add Options</b></button>
+            <hr>
+            <button type='submit' class="grn-button"><b>Create Poll</b></button>
+            <hr>
+            </form>
+
+            <div id="footer" class="center green">
+              <br><br><br><br><br><br>
+             Made by ❤️ <a  class="greenlink" href="https://r0hitraj.github.io/">Rohit Raj</a> 
+         </div>
+          </div>
+<script>
+    function add(){
+      var new_chq_no = parseInt($('#total_chq').val())+1;
+      var new_input="<li><input type='text' name='link'  placeholder='Enter letters that present after youtube.com/' id='new_"+new_chq_no+"' required='Give Youtube Video Link'> &nbsp; <input type='text' placeholder='Enter Name' name='name' id='new_"+new_chq_no+" '  required='Enter Name'/><button id='del'>Delete Option</button><br><br></li>";
+      $('#new_chq').append(new_input);
+      $('#total_chq').val(new_chq_no)
+
+
+      $("ul").on("click", "button", function(e) {
+					e.preventDefault();
+					$(this).parent().remove();
+				});
+    }
+</script>
+
+{% endblock body %}

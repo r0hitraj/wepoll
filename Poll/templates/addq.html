@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block body %}
+
+
+        <div id="centered">
+            <h1 class="font horcent">Welcome to<a class="greenlink" href="#"><i class="green"> WePoll</i></a></h1>
+            <h2 class="font horcent"><i class="green">Please Write Your Question</i></h2>
+            <hr>
+            <form action=""  method='POST'>
+              {% csrf_token %}
+            <b></b><input type="text" name="question" placeholder="Write  Question  Here" required="Write Question Here" /></b>
+            <hr>
+            <button type='submit' class="grn-button"><b>Save Question</b></button>
+            <hr>
+            </form>
+
+            <div id="footer" class="center green">
+              <br><br><br><br><br><br>
+             Made by ❤️ <a  class="greenlink" href="https://r0hitraj.github.io/">Rohit Raj</a> 
+         </div>
+          </div>
+
+          {% endblock body %}

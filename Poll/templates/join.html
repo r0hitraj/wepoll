@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block body %}
+        <div id="centered">
+            <h1 class="font horcent">Join the Poll By,<a class="greenlink" href="#"><i class="green"> Providing Pollid</i></a></h1>
+            <hr>
+            <form action=""  method='POST'>
+              {% csrf_token %}
+            <h3 class="font horcent"><i>Pollid</i></h3>
+            <b></b><input type="text" placeholder="Enter Poll Id " name='Username' required="Enter Username"/></b>
+            <hr>
+            <button type="submit" class="grn-button"><b>Join</b></button>
+            <hr>
+            </form>
+            {% for message in messages %}
+            <h4 class="font horcent"><i class="green"><b>{{message}}</b></i></h4>
+          {% endfor %}
+
+
+          <div id="footer" class="center green">
+            <br><br><br><br><br><br>
+           Made by ❤️ <a  class="greenlink" href="https://r0hitraj.github.io/">Rohit Raj</a> 
+       </div>
+
+          </div>
+          
+           {% endblock body %}
