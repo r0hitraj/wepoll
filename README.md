@@ -28,8 +28,9 @@ Django poll app is a full featured polling app. You have to register in this app
 <code>python manage.py runserver</code>
 
 <p>Then go to http://127.0.0.1:8000 in your browser</p>
-
-
+<h2>Screenshoots</h2>
+<img src="https://user-images.githubusercontent.com/43220855/107428270-67e7e480-6b48-11eb-9791-8fde116ed5a7.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/43220855/107428271-68807b00-6b48-11eb-9107-fb45700e12cb.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/43220855/107428273-69191180-6b48-11eb-988c-312f72fc9f00.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/43220855/107428276-69191180-6b48-11eb-98d1-56272bfd6ab1.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/43220855/107428279-69b1a800-6b48-11eb-83fe-eb5bdd23df03.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/43220855/107428281-6a4a3e80-6b48-11eb-9215-2afb5fbbf90f.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/43220855/107428282-6ae2d500-6b48-11eb-8c62-90e6cffb602b.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/43220855/107428265-64ecf400-6b48-11eb-8fb8-c8d49ccc3b3f.png" width="90%"></img> 
+<br>
 <h2>Author</h2>
 <blockquote>
   Rohit Raj<br>
